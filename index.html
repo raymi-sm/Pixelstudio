@@ -1,0 +1,422 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="es"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="es"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="es"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Pixelstudio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <!--<link rel="stylesheet" href="css/styles.css" />-->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <script src="js/prefixfree.js"></script>
+  <link rel="stylesheet" href="css/jquery.lightbox-0.5.css" />
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ 
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>-->
+  
+  <!-- Activar toda la magia en IE. :) -->
+    
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="js/selectivizr.js"></script>
+  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+<![endif]-->
+  
+</head>
+
+<body>
+
+    <header>
+    	<div class="container">
+    		<div id="logo" class="floated"><h3>Pixelstudio</h3></div>
+    		
+    		<nav class="floated">
+	    		<ul id="menu">
+					<li><a href="#section-1" class="current">Home</a></li>
+					<li><a href="#section-2">Portfolio</a></li>
+					<li><a href="#section-3">My Work</a></li>
+					<li><a href="#section-4">About Me</a></li>
+					<li><a href="#section-5">Elements</a></li>
+					<li><a href="#section-6">Contact</a></li>
+				</ul>
+    	</nav>
+    	</div><!-end container-->
+    </header>
+    
+    <section class="block container" id="section-1">
+    	<h2 class="border-thick space">Welcome</h2>
+    	<div class="border-thin">
+    		<section id="top">
+    			<article class="floated" id="description">
+    				<h1>Welcome to <span>Pixelstudio!</span></h1>
+    				<p>Sed sed mollis neque. Integer ac libero ligula, sit amet volutpat magna. Maecenas tincidunt nulla iaculis massa ultricies facilisis. Curabitur sagittis cursus dolor, a tempor mauris sagittis ac. Pellentesque pharetra mattis urna, sit amet euismod nunc egestas ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+					</p>
+					
+					<p>
+						Nulla fringilla tempus quam, ut ornare erat volutpat a. Cras porttitor lacus et diam aliquet hendrerit. Donec vitae tellus nec nibh bibendum tincidunt et auctor erat. Aliquam erat mauris, faucibus ultricies condimentum adipiscing, bibendum eu nulla.
+					</p>
+    			</article>
+    			
+    			<article class="floated" id="main-slider">
+    				<div id="slider-container">
+    					<div id="slider">
+    						<div>
+    							<a href=""><img src="images/slide1.jpg" alt="first slide" /></a>
+    							<p>Descripcion of image 1</p>
+    						</div>
+	    					
+	    					<div>
+	    						<a href=""><img src="images/slide2.jpg" alt="second slide" /></a>
+	    						<p>Descripcion of image 2</p>
+	    					</div>
+	    					
+	    					<div>
+	    						<a href=""><img src="images/slide3.jpg" alt="third slide" /></a>
+	    						<p>Descripcion of image 3</p>
+	    					</div>
+	    					
+	    					<div>
+	    						<a href=""><img src="images/slide4.jpg" alt="four slide" /></a>
+	    						<p>Description of image 4</p>
+	    					</div>
+	    					
+	    				</div><!-end slider-->
+    				</div><!-end slider-container-->
+    					
+    				<div id="prevNext">
+    					<a href="" id="prev">prev</a>
+    					<a href="" id="next">next</a>
+    				</div>
+    				
+    				<div id="numericNav">
+    				
+    				</div>    				
+    			</article>
+    			
+    		</section><!-end top-->
+    		
+    		<section id="bottom">
+				<article id="block-1" class="floated">
+					<h3>What I Do</h3>
+					<p>Donec neque libero, tincidunt ultrices tristique et, rhoncus et lacus. Phasellus varius felis nec erat malesuada dignissim. Sed aliquet, risus eu malesuada tempus.</p>
+				</article>
+				
+				<article id="block-2" class="floated">
+					<h3>How I do it</h3>
+					<p>Etiam ligula ante, ullamcorper vel luctus feugiat, dignissim sit amet odio. Suspendisse ultricies risus a quam tincidunt et tristique ipsum hendrerit.</p>
+				</article>
+				
+				<article id="block-3" class="floated">
+					<h3>About Me</h3>
+					<p>Nunc luctus purus ac eros interdum ullamcorper. Pellentesque ut dolor nulla. Nunc et massa arcu, at bibendum velit. Sed ut lacus non elit tempor dignissim. Donec nibh tellus</p>
+				</article>
+    		</section><!-end bottom-->
+    		
+    	</div>
+    </section><!-end section-1-->
+    
+    <section class="block container" id="section-2">
+    	<h2 class="border-thick space">Portfolio</h2>
+    	<div class="border-thin">
+    		<ul id="portfolio" class="gallery">
+				<li><a href="images/big-pics/01-big.jpg"><img src="images/01.jpg" alt="#" width="250" height="152" /></a></li>
+				<li><a href="images/big-pics/02-big.jpg"><img src="images/02.jpg" alt="#" width="250" height="152" /></a></li>
+				<li><a href="images/big-pics/03-big.jpg"><img src="images/03.jpg" alt="#" width="250" height="152" /></a></li>
+				<li><a href="images/big-pics/04-big.jpg"><img src="images/04.jpg" alt="#" width="250" height="152" /></a></li>
+				<li><a href="images/big-pics/05-big.jpg"><img src="images/05.jpg" alt="#" width="250" height="152" /></a></li>
+				<li><a href="images/big-pics/06-big.jpg"><img src="images/06.jpg" alt="#" width="250" height="152" /></a></li>
+				<li><a href="images/big-pics/07-big.jpg"><img src="images/07.jpg" alt="#" width="250" height="152" /></a></li>
+				<li><a href="images/big-pics/08-big.jpg"><img src="images/08.jpg" alt="#" width="250" height="152" /></a></li>
+				<li><a href="images/big-pics/01-big.jpg"><img src="images/01.jpg" alt="#" width="250" height="152" /></a></li>
+			</ul>
+    	</div>
+    </section><!-end section-2-->
+    
+    <section class="block container" id="section-3">
+    	<h2 class="border-thick space">My-Work</h2>
+    	<div class="border-thin">
+    		<ul id="tabs">
+    			<li><a href="" class="active">Design</a></li>
+    			<li><a href="">Print</a></li>
+    			<li><a href="">Logo</a></li>
+    			<li><a href="">Illustration</a></li>
+    		</ul>
+    		
+    		<ul id="works" class="gallery">
+				<li><a href="images/big-pics/01-big.jpg"><img src="images/01.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/02-big.jpg"><img src="images/02.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/03-big.jpg"><img src="images/03.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/04-big.jpg"><img src="images/04.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/05-big.jpg"><img src="images/05.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/06-big.jpg"><img src="images/06.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/07-big.jpg"><img src="images/07.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/08-big.jpg"><img src="images/08.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/01-big.jpg"><img src="images/01.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/02-big.jpg"><img src="images/02.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/03-big.jpg"><img src="images/03.jpg" alt="#" width="180" height="116" /></a></li>
+				<li><a href="images/big-pics/04-big.jpg"><img src="images/04.jpg" alt="#" width="180" height="116" /></a></li>
+			</ul>
+    	</div>
+    </section><!-end section-3-->
+    
+    <section class="block container" id="section-4">
+    	<h2 class="border-thick space">About Me</h2>
+    	<div class="border-thin">
+    		<section class="primary" id="about">
+    			<p><span>N</span>m imperdiet faucibus orci ut vestibulum. Cras ut tellus ac leo blandit convallis a vitae odio. Integer molestie varius hendrerit. Ut lacinia eleifend dolor ut luctus. Sed euismod quam congue est congue lacinia. Aliquam quam augue, fringilla faucibus consequat vitae, mollis ac nulla. Nunc at urna enim, non mollis mi. Nunc eget magna mauris. Aenean elit ligula, dignissim;</p>
+    			<p>Quisque cursus libero ante, a pellentesque massa. Vestibulum et dolor ut est tincidunt aliquam. Aliquam nunc velit, ornare eu porta et, volutpat sit amet arcu. Quisque vel risus dolor. Sed blandit, sapien ac tempus faucibus, lectus massa tincidunt tortor, a commodo risus orci gravida tortor. </p>
+    			
+    			<h3>Pellentesque eu metus est, id accumsan leo</h3>
+    			
+    			<p>Nulla facilisi. Nam sagittis pretium iaculis. Curabitur egestas mattis dui, vitae ultricies tortor facilisis vel. Phasellus et cursus enim. Maecenas vel porta magna. Curabitur at elit ut lacus luctus mattis. Sed nibh quam, blandit vitae feugiat eu, gravida a elit. Donec commodo laoreet venenatis. Curabitur eget augue augue, in pellentesque arcu. Phasellus eget turpis nec lorem sagittis sagittis.</p>
+    			
+    			<h3>Morbi viverra, neque quis</h3>
+    			<p>Cras feugiat rutrum leo, at viverra nisl ornare quis. Maecenas quis quam justo. Proin molestie, massa lacinia pharetra aliquam, eros nunc ultricies magna, sit amet molestie ligula nulla vitae arcu. Donec commodo laoreet venenatis. Curabitur eget augue augue, in pellentesque arcu. Phasellus eget turpis nec lorem sagittis sagittis. Quisque porta fringilla quam, a volutpat justo imperdiet non.</p>
+    			
+    			<h4>Some styled typography</h4>
+    			
+    			<div><p id="deco-1" class="deco">Sed adipiscing lorem massa, in aliquet lectus. Nunc mollis mauris vitae est vestibulum mattis. Nunc lacus magna, aliquet sit amet elementum at, iaculis ac lacus. Maecenas et interdum erat. Sed augue dolor, fermentum ut commodo quis.</p></div>
+    			
+    			<div><p id="deco-2" class="deco">Nam bibendum, purus sit amet convallis tempor, dolor lorem ullamcorper eros, vitae dapibus justo diam a elit. Duis at massa nulla, eget consequat velit. Nulla auctor, mauris eu mattis gravida, lorem neque posuere eros, quis vehicula mauris.</p></div>
+    			
+    			<div><p id="deco-3" class="deco">Praesent in tellus in urna fermentum lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla tempus pretium lorem, semper laoreet mi ornare sagittis. Id placerat leo dictum non.</p></div>
+    			
+    			<div><p id="deco-4" class="deco">Aliquam aliquam mattis varius. Fusce interdum mi nec lacus pellentesque adipiscing. Sed in augue non massa elementum rhoncus quis quis eros. Quisque viverra, dolor eu eleifend elementum, elit massa aliquam lectus, in varius odio lacus a justo.</p></div>
+    		</section><!-end primary-->
+    		
+    		<section class="secondary">
+    			<h3>From Flickr</h3>
+    			<ul id="flickr">
+    				<li><a href=""><img src="images/t1.jpg" alt="#" /></a></li>
+    				<li><a href=""><img src="images/t2.jpg" alt="#" /></a></li>
+    				<li><a href=""><img src="images/t3.jpg" alt="#" /></a></li>
+    				<li><a href=""><img src="images/t4.jpg" alt="#" /></a></li>
+    				<li><a href=""><img src="images/t3.jpg" alt="#" /></a></li>
+    				<li><a href=""><img src="images/t4.jpg" alt="#" /></a></li>
+    			</ul>
+    			
+    			<h3>Links</h3>
+    			<ul>
+    				<li><a href="">Themeforest</a></li>
+    				<li><a href="">GraphicRiver</a></li>
+    				<li><a href="">CodeCanyon</a></li>
+    				<li><a href="">ActiveDen</a></li>
+    				<li><a href="">Themeforest</a></li>
+    				<li><a href="">GraphicRiver</a></li>
+    				<li><a href="">CodeCanyon</a></li>
+    				<li><a href="">ActiveDen</a></li>
+    			</ul>
+    		</section>
+    	</div>
+    </section>
+    
+    <section class="block container" id="section-5">
+    	<h2 class="border-thick space">Elements and Classes</h2>
+    	<div class="border-thin">
+    		<section class="primary" id="elements">
+    			<p><span>D</span>onec vel est elit. Morbi augue enim, lobortis a commodo vitae, sodales in arcu. Suspendisse dapibus lacinia sem at molestie. Sed auctor tempus ullamcorper. Ut sed bibendum odio. Quisque tincidunt luctus convallis. Morbi tincidunt egestas risus, non tincidunt gilla, nibh at scelerisque luctus, dui diam vestibulum justo, et venenatis nulla lectus in ligula. Ut in enim sapien, quis tempus nisi. Ut odio erat, tincidunt vitae aliquam at, vehicula eu purus. Maecenas nisl velit, ultricies vel fringilla sed, aliquam sed massa. Duis dignissim purus at sem dapibus pulvinar. Etiam eget mauris semper sem consequat commodo. Etiam tortor purus, tristique congue faucibus vel, tempor nec urna. Aliquam commodo, est sed cursus pellentesque.</p>
+    		
+	    		<h3>Some additional text, this is another header</h3>
+	    		<p>Nulla facilisi. Nam sagittis pretium iaculis. Curabitur egestas mattis dui, vitae ultricies tortor facilisis vel. Phasellus et cursus enim. Maecenas vel porta magna. Curabitur at elit ut lacus luctus mattis. Sed nibh quam, blandit vitae feugiat eu, gravida a elit</p>
+	    		
+	    		<ul>
+	    			<li>Praesent molestie sapien sed arcu tempor vitae congue metus ultricies.</li>
+	    			<li>Proin blandit arcu lacinia eros feugiat gravida.</li>
+	    			<li>Curabitur sodales auctor arcu, eget tempus nisi lacinia at.</li>
+	    		</ul>
+	    		
+	    		<p>Nunc eleifend, ante a vestibulum ultricies, neque sapien vulputate velit, eu ultrices orci velit ac turpis. Morbi id augue ac lorem dapibus aliquet id eu sem. Sed sed magna ac erat dignissim.</p>
+	    		<ol>
+	    			<li>Morbi nec leo a lectus elementum accumsan nec a enim.</li>
+	    			<li>Nunc dignissim ante nec eros rhoncus volutpat.</li>
+	    			<li>Proin blandit arcu lacinia eros feugiat gravida.</li>
+	    		</ol>
+	    		
+	    		<h2>This is an h2 header</h2>
+	    		<p>Quisque pretium, nulla non venenatis pharetra, dui mauris interdum massa, eu lobortis ipsum justo et orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	    		
+	    		<h3>This is an h3 header</h3>
+	    		<p>Aliquam convallis tincidunt nisl vel dictum. Mauris rhoncus purus nec eros hendrerit sit amet feugiat augue venenatis. Pellentesque quis justo aliquet urna luctus aliquet at a dolor.</p>
+	    		
+	    		<h4>This is an h4 header</h4>
+	    		<p>Proin molestie molestie iaculis. Nunc iaculis condimentum massa. Etiam aliquam diam in est luctus et pellentesque dui pharetra. Morbi lobortis massa at eros pharetra id egestas neque pretium.</p>
+	    		
+	    		<h5>This is an h5 header</h5>
+	    		<p>Proin molestie molestie iaculis. Nunc iaculis condimentum massa. Etiam aliquam diam in est luctus et pellentesque dui pharetra. Morbi lobortis massa at eros pharetra id egestas neque pretium.</p>
+    		</section><!-end primary-->
+    		
+    		<aside class="secondary">
+    			<div id="img"><img src="images/01.jpg" alt="#" width="250" height="152" /></div>
+    			<h3>Testimonials</h3>
+    			<blockquote>
+    				<p id="comillas-izquierda"><cite>Duis pulvinar blandit tempus. Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam. Proin mollis, ipsum vitae.</cite></p>
+    				<p id="comillas-derecha">John Doe <a href="">ABC Company</a></p>
+    				
+    				<p id="comillas-izquierda"><cite>Duis pulvinar blandit tempus. Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam. Proin mollis, ipsum vitae.</cite></p>
+    				<p id="comillas-derecha">John Doe <a href="">ABC Company</a></p>
+    				
+    				<p id="comillas-izquierda"><cite>Duis pulvinar blandit tempus. Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam. Proin mollis, ipsum vitae.</cite></p>
+    				<p id="comillas-derecha">John Doe <a href="">ABC Company</a></p>
+    				
+    				<p id="comillas-izquierda"><cite>Duis pulvinar blandit tempus. Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam. Proin mollis, ipsum vitae.</cite></p>
+    				<p id="comillas-derecha">John Doe <a href="">ABC Company</a></p>
+    			</blockquote>
+    			
+    			<section id="text-box">
+    				<h4>This is a textbox</h4>
+    				<p><strong>Duis pulvinar blandit tempus</strong>. Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam.</p>
+    				
+    				<p><strong>In velit nisi, iaculis in aliquet eget,</strong>fermentum non orci. Ut commodo pharetra dui lacinia vulputate. Mauris et ante tortor. Fusce quis dui sit amet risus mattis elementum quis sit amet lectus.</p>
+    			</section>
+    			
+    		</aside><!-end secondary-->
+    	</div>
+    </section>
+    
+    <section class="block container" id="section-6">
+    	<h2 class="border-thick space">Contact</h2>
+    	<div class="border-thin">
+    		<section class="primary">
+    			<p>Donec vel est elit. Morbi augue enim, lobortis a commodo vitae, sodales in arcu. Suspendisse dapibus lacinia sem at molestie. Sed auctor tempus ullamcorper. Ut sed bibendum odio. Quisque tincidunt luctus convallis.</p>
+    			
+    			<form>
+    				<div>
+    					<label for="Name">Name:</label>
+    					<input type="text" name="name" id="name-field" />
+    				</div>
+    				
+    				<div>
+    					<label for="Name">E-mail:</label>
+    					<input type="text" name="email" id="email-field" />
+    				</div>
+    				
+    				<div>
+    					<label for="Message">Message:</label>
+    					<textarea cols="50" rows="10" id="message-field"></textarea>
+    				</div>
+    				
+    				
+					<div class="floated"><input type="submit" id="reset_btn" name="send-button" value="reset" /></div>
+					<div  class="floated"><input type="submit" id="send_btn" name="reset-button" value="send" /></div>
+    				
+    				
+    			</form>
+    		</section><!-end primary-->
+    		
+    		<aside class="secondary">
+    			<h3>Contact Informations</h3>
+    			<p>Feel free to contact us for any of your projects, we’ll gat back to you as soon as possible !</p>
+    			<p id="company">
+    				Company Name <br />
+    				789 Street name<br />
+    				999 00 City name, Country
+    			
+    			</p>
+    			
+    			<p id="phone">
+    				Phone : +000 987 654 321 <br />
+    				789 Street nameFax : +000 123 456 789<br />    			
+    			</p>
+    			
+    			<p id="email">Email : sales@yourcompany.com</p>
+    		</aside><!-end secondary-->
+    		
+    	</div>
+    </section>
+    
+    <footer>
+    	<div class="container">
+    		<ul>
+	    		<li class="floated">
+	    			<h4>Social Networks</h4>
+	    			<p>For all news and updates, join us on the social networks and stay tuned ! </p>
+	    			<ul id="icons">
+						<li><a href="#"><img src="images/facebook.png" alt="#" /></a></li>
+						<li><a href="#"><img src="images/twitter.png" alt="#" /></a></li>
+						<li><a href="#"><img src="images/flickr.png" alt="#" /></a></li>
+						<li><a href="#"><img src="images/facebook.png" alt="#" /></a></li>
+						<li><a href="#"><img src="images/blogger.png" alt="#" /></a></li>
+					</ul>
+	    		</li>
+	    		
+	    		<li class="floated">
+	    			<h4>Freelance Work</h4>
+	    			<p>I'm currently available for freelance work, I can design for you a brand new website or create an awesome logo.</p>
+					<p>Just <a href="">drop me an email</a> to get in touch !</p>
+	    		</li>
+	    		
+	    		<li class="floated">
+	    			<p>This theme uses 100% valid HTML and CSS</p>
+	    			<p>Copyright &copy; 2010 Pixelstudio</p>
+	    		</li>
+	    	</ul>
+    	</div>
+    	
+    </footer>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="js/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script src="js/scripts.js"></script>
+  <!--<script src="js/pre-fix.js"></script>-->
+  <script src="js/cycle.js"></script>
+  <script src="js/jquery.lightbox-0.5.js"></script>
+  <script type="text/javascript">
+		$(document).ready(function() {
+			$('.gallery a').lightBox(); // Select all links in object with gallery ID		
+		});
+</script>
+<script src="js/navigation.js"></script>
+<script src="js/scrollto.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <!--<script defer src="plugins.js"></script>-->
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
